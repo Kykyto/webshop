@@ -1,29 +1,43 @@
-# webshop
+# Vidéos et Screenshots
 
-This template should help get you started developing with Vue 3 in Vite.
+## Site Internet
+https://github.com/Kykyto/webshop/assets/70697745/1faf15f9-93d5-402b-a2ab-30ab1b8371d3
 
-## Recommended IDE Setup
+## Base MongoDB
+![base_mongodb](https://github.com/Kykyto/webshop/assets/70697745/d8c5f708-030b-478f-8497-eb25f5ab8f5e)
+</br>
+</br>
+</br>
+# Outils utilisés
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Conception web
+Le TP a été réalisé avec Vue.js pour le Frontend et JavaScript pour le Backend, avec Vite pour la création du projet. Il nécessite également d’avoir une version de Node.js d’installée.
 
-## Customize configuration
+## Base de données
+La base de données choisie est MongoDB utilisée avec Mongoose et Express pour communiquer côté serveur et Axios pour effectuer des requêtes HTTP côté client.
+</br>
+</br>
+</br>
+# Lancer le site en local
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+## Initialiser la base de données
+-	Installer MongoDB en local et lancer MongoDBCompass
+-	Aller dans le dossier du projet et lancer la commande suivante afin d’initialiser la base : 
+```
+node ./src/api/scripts/createProducts.js
 ```
 
-### Compile and Hot-Reload for Development
+## Démarrer le serveur 
+-	Depuis le dossier du projet, lancer la commande :
+```
+node ./src/api/server.js
+```
 
-```sh
+## Démarrer le site web
+-	Depuis le dossier du projet, lancer la commande :
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
+-	Aller sur navigateur et se rendre sur l’URL indiquée par Vite
 
-```sh
-npm run build
-```
