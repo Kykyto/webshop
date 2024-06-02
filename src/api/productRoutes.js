@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-    const products = require('../controllers/productController');
+    const products = require('./productController');
 
     app.route('/products')
         .get(products.get_list_product);

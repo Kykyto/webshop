@@ -1,4 +1,4 @@
-var mongoose = require('mongoose'), Product = require('../models/productModels');
+var mongoose = require('mongoose'), Product = require('../productModels');
 
 const uri = 'mongodb://localhost:27017/';
 

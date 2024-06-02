@@ -13,8 +13,8 @@ mongoose.connect('mongodb://localhost:27017/', { useNewUrlParser: true, useUnifi
 app.use(bodyParser.json());
 app.use(cors());
 
-require('./models/productModels');
-require('./routes/productRoutes')(app);
+require('./productModels');
+require('./productRoutes')(app);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
